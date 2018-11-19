@@ -1,0 +1,25 @@
+# When the plug-in is loaded, these menus are merged with the standard Rcmdr menus
+
+# last modified: 13 August 2018 by M.G. Correia
+
+#type       menu/item  operation/parent                                       label                  command/menu                  activation    			    	install?
+ menu     netmetaMenu           topMenu                                          ""                            ""                          "" 		                      "" 
+ item     netmetaMenu           command          "Data conversion - Binary outcome"                  ConvertDataA          "activeDataSetP()"      		    		      ""
+ item     netmetaMenu           command      "Data conversion - Continuous outcome"                  ConvertDataB          "activeDataSetP()"      		    		      ""
+ item     netmetaMenu           command          "Data conversion - Incidence rate"                  ConvertDataC          "activeDataSetP()"      		    		      ""
+ item     netmetaMenu           command         "Data conversion - Generic outcome"                  ConvertDataD          "activeDataSetP()"      		    		      ""
+ item     netmetaMenu           command                 "Run Network Meta-Analysis"                  netmetaModel          "activeDataSetP()"           			      ""
+ item     netmetaMenu           command        "Run Additive Network Meta-Analysis"                  netcombModel          "activeDataSetP()"         				      ""
+ item     netmetaMenu	      separator	                                         ""						       ""						   "" 						      ""
+ item     netmetaMenu           command                 "Verify network connection"                    Connection          "activeDataSetP()"       		    	      ""
+ item     netmetaMenu           command                           "Network results"                       Results          "activeDataSetP()"       		    	      ""
+ item     netmetaMenu           command                       "Pairwise comparison"                  PairwiseComp          "activeDataSetP()"       		    	      ""
+ item     netmetaMenu           command                        "Ranking treatments"                       Ranking          "activeDataSetP()"       			          ""
+ item     netmetaMenu           command           "Split evidences / Inconsistency"                     SplitEvid          "activeDataSetP()"       			          ""
+ item     netmetaMenu         separator                                          ""                            ""                          ""       		    	      ""
+ item     netmetaMenu           command                             "Network graph"                  NetworkGraph          "activeDataSetP()"       	    		      ""
+ item     netmetaMenu           command                               "Forest Plot"                    ForestPlot          "activeDataSetP()"         				      ""
+ item     netmetaMenu           command                      "Splitted Forest Plot"               SplitForestPlot          "activeDataSetP()"         				      ""
+ item     netmetaMenu           command                             "Hasse diagram"                  HasseDiagram          "activeDataSetP()"         				      ""
+ item     netmetaMenu           command                                 "Heat plot"                      HeatPlot          "activeDataSetP()"         				      ""
+ item         topMenu           cascade                     "Network Meta-Analysis"                   netmetaMenu	   		               ""  "packageAvailable('netmeta')"

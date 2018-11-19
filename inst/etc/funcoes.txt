@@ -1,0 +1,66 @@
+decomp.design --> Calcula a homogeneidade e a consistencia da rede --> Inconsistency
+	Requisito --> Comparação indireta realizada
+	
+discomb --> Faz a comparação indireta no modelo aditivo com rede (separada?)
+	Requisito --> Dados
+	
+forest.netmeta --> Cria o forest plot --> ForestPlot
+	Requisito --> Comparação indireta realizada
+	
+forest.netsplit --> Cria o forest plot para a comparação direta e indireta --> SplitForestPlot
+	Requisito --> Comparação indireta realizada
+	
+hasse --> Cria o diagrama de Hasse --> HasseDiagram
+	Requisito --> Comparação indireta realizada (Duas no mínima com os mesmos dados)
+	
+netcomb --> Faz a comparação indireta no modelo aditivo --> netcombModel
+	Requisito --> Dados
+	
+netconnection --> Verifica a conectividade da rede --> Connection
+	Requisito --> Dados
+	
+netgraph --> Monta o gráfico de rede --> NetworkGraph
+	Requisito --> Comparação indireta realizada
+	
+netheat --> Monta o gráfico de calor da inconsistência da rede --> HeatPlot
+	Requisito --> Comparação indireta realizada
+	
+netleague --> Monta uma matriz com as comparações pareadas --> Pairwise
+	Requisito --> Comparação indireta realizada
+	
+netmatrix --> Função que auxilia na montagem de matriz de pares com infos adicionais
+	Requisito --> Comparação indireta realizada
+	
+netmeasures --> Quantifica informações de performance sobre a comparação indireta --> Performance
+	Requisito --> Comparação indireta realizada
+	
+netmeta --> Cria a comparação indireta --> netmetaModel
+	Requisito --> Dados
+	
+netposet --> Ordena parcialmente os tratamentos na comparação indireta
+	Requisito --> Dados
+	
+netrank --> Faz o ranqueamento dos tratamentos através do p-score --> Ranking
+	Requisito --> Comparação indireta realizada
+	
+netsplit --> Método utilizados para verificar as contribuições diretas e indiretas --> SplitEvid
+	Requisito --> Comparação indireta realizada
+
+pairwise --> Função de organização de dados para a base analítica --> ConvertData
+	Requisito --> Dados
+
+plot.netposet --> Gráfico do ordenamento parcial da comparação indireta
+	Requisito --> Comparação indireta realizada
+	
+print.decomp.design --> Apresenta as estatísticas de homogeneidade e a consistencia da rede
+	Requisito --> Objeto com os cálculos de homogeneidade e consistencia
+	
+print.netcomb --> Apresenta as estatísticas da comparação indireta aditiva
+	Requisito --> Objeto com os cálculos da comparação indireta aditiva
+	
+print.netmeta --> Apresenta as estatísticas da comparação indireta
+	Requisito --> Objeto com os cálculos da comparação indireta
+	
+treats --> Abrevia o nome dos tratamentos
+	Requisito --> Dados
+	
